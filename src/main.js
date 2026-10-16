@@ -227,4 +227,4 @@ function loop(now){
  for(const p of rain){const a=p.geometry.attributes.position;for(let i=0;i<a.count;i++){a.array[i*3+1]-=dt*16;if(a.array[i*3+1]<0){a.array[i*3+1]=25;a.array[i*3]=player.x+(Math.random()-.5)*60;a.array[i*3+2]=player.z+(Math.random()-.5)*60;}}a.needsUpdate=true;p.position.set(0,0,0);}
  renderer.render(scene,camera);
 }
-updateHUD();say('Selamat datang! Jelajahi dunia dan bertahan hidup.');requestAnimationFrame(l
+updateHUD();say('Selamat datang! Jelajahi dunia dan bertahan hidup.');requestAnimationFrame(loop);
