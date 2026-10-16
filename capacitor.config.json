@@ -1,0 +1,6 @@
+{
+  "appId": "com.codingxondev.blockstrike",
+  "appName": "BlockStrike Survival 3D",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
